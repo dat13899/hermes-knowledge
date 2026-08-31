@@ -1,3 +1,8 @@
 .DS_Store
 *.lock
 *.pid
+# Secrets — KHÔNG commit
+a*_config.json
+*_token*
+.env
+*.pem

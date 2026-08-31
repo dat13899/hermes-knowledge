@@ -206,8 +206,10 @@ Nếu máy mới CŨNG chạy home lab như máy cũ, cần dựng lại các se
 ## 10. Lưu ý bảo mật (QUAN TRỌNG)
 
 - **Không commit secrets** vào repo này. Các file như `scripts/*.json`, `scripts/password`, `*.env`, token thật phải được **che/xóa** trước khi push.
-- **Re-authenticate** trên máy mới: `gh`, `git`, Telegram bot token, Zalo token, OmniRoute key — tất cả đều phải set lại, không dùng chung token máy cũ.
+- **⚠️ `scripts/aternos_config.json`** chứa mật khẩu thật (`{"user":..., "pass":...}`). File này **KHÔNG được commit** — đã được thêm vào `.gitignore` và gỡ khỏi track. Khi base lại máy mới, cần **tự tạo lại** file này với mật khẩu Aternos mới, KHÔNG dùng bản cũ.
+- **Re-authenticate** trên máy mới: `gh`, `git`, Telegram bot token, Zalo token, OmniRoute key, Aternos — tất cả đều phải set lại, không dùng chung token máy cũ.
 - Repo `hermes-knowledge`, `service-dashboard`, `omniroute`, `dlv`, `private-backup`... đều **private** — chỉ Anh Đạt có quyền truy cập.
+- Các file đã bị loại khỏi repo bằng `.gitignore`: `*_config.json`, `*_token*`, `.env`, `*.pem`.
 
 ---
 
