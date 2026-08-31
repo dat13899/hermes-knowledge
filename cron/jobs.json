@@ -1,0 +1,147 @@
+{
+  "jobs": [
+    {
+      "id": "60e17552e7ad",
+      "name": "Aternos watchdog",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "aternos-watchdog.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 10,
+        "display": "every 10m"
+      },
+      "schedule_display": "every 10m",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-07-11T22:56:59.690322+07:00",
+      "paused_reason": null,
+      "created_at": "2026-07-11T22:51:46.996993+07:00",
+      "next_run_at": "2026-07-11T23:01:46.996993+07:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1088711997",
+        "chat_name": "Tiến Đạt",
+        "thread_id": null,
+        "user_id": "1088711997"
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "935fbfb7f3c0",
+      "name": "btdat backup daily",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "btdat-backup.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 * * *",
+        "display": "0 3 * * *"
+      },
+      "schedule_display": "0 3 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 37
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-23T10:49:48.896879+07:00",
+      "next_run_at": "2026-09-01T03:00:00+07:00",
+      "last_run_at": "2026-08-31T03:00:17.227453+07:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1088711997",
+        "chat_name": "Tiến Đạt",
+        "thread_id": null,
+        "user_id": "1088711997"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null,
+      "failure_streak": 0
+    },
+    {
+      "id": "2b647444bb48",
+      "name": "Check Zalo token",
+      "prompt": "Kiểm tra Zalo access token hết hạn chưa",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "check_zalo_token.py",
+      "no_agent": true,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * *",
+        "display": "0 8 * * *"
+      },
+      "schedule_display": "0 8 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 12
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-21T12:21:18.344649+07:00",
+      "next_run_at": "2026-09-01T08:00:00+07:00",
+      "last_run_at": "2026-08-31T08:00:22.954602+07:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1088711997",
+        "chat_name": "Tiến Đạt",
+        "thread_id": null,
+        "user_id": "1088711997"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null,
+      "failure_streak": 0
+    }
+  ],
+  "updated_at": "2026-08-31T08:00:22.967063+07:00"
+}
